@@ -1,0 +1,38 @@
+# Render Blueprint — API ImpotFacile (Spring Boot + TiDB MySQL)
+#
+# Utilisation :
+#   1. Poussez le projet sur GitHub (backend/ et frontend/ inclus, .env exclu)
+#   2. Sur https://dashboard.render.com : "New +" > "Blueprint" > connectez le repo GitHub
+#   3. Renseignez dans le dashboard les variables marquees "sync: false" :
+#        - SPRING_DATASOURCE_PASSWORD : mot de passe de la base TiDB
+#        - JWT_SECRET                 : secret JWT (>= 32 caracteres)
+#        - APP_ENCRYPTION_KEY         : cle AES-256 en base64 (32 octets)
+#      (toute tentative de mise a jour de APP_ENCRYPTION_KEY apres deploiement
+#       rend illisibles les donnees chiffrees deja stockees !)
+#
+services:
+  - type: web
+    name: impotfacile-api
+    runtime: docker
+    repo: https://github.com/VOTRE-COMPTE/impotfacile
+    branch: main
+    dockerfilePath: ./backend/Dockerfile
+    healthCheckPath: /api/formulaires/actif
+    plan: free
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: "jdbc:mysql://gateway01.eu-central-1.prod.aws.tidbcloud.com:4000/impotfacile?sslMode=REQUIRED&serverTimezone=UTC&enabledTLSProtocols=TLSv1.2,TLSv1.3"
+      - key: SPRING_DATASOURCE_USERNAME
+        value: "353FbwX3nYJWZgZ.root"
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: SPRING_JPA_HIBERNATE_DDL_AUTO
+        value: update
+      - key: JWT_SECRET
+        sync: false
+      - key: APP_ENCRYPTION_KEY
+        sync: false
+      - key: APP_CORS_ALLOWED_ORIGINS
+        value: "https://tooexplore.com"
+      - key: JAVA_TOOL_OPTIONS
+        value: "-Xmx300m"

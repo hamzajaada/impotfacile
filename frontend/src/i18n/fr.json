@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "pricing": "Tarifs",
+    "blog": "Blog",
+    "contact": "Contact",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "dashboard": "Mon tableau de bord",
+    "formBuilder": "Formulaire",
+    "logout": "Déconnexion"
+  },
+  "home": {
+    "title": "Votre déclaration d'impôts, simplifiée",
+    "subtitle": "ImpôtFacile vous accompagne dans votre déclaration de revenus avec des conseillers fiscal experts au Québec.",
+    "cta": "Commencer ma déclaration",
+    "features": {
+      "secure": "Sécurisé",
+      "secureDesc": "Vos documents sont chiffrés et protégés conformément à la Loi 25.",
+      "fast": "Rapide",
+      "fastDesc": "Déclarez en quelques minutes grâce à notre formulaire guidé.",
+      "expert": "Expert",
+      "expertDesc": "Des conseillers fiscaux certifiés vérifient votre dossier."
+    }
+  },
+  "auth": {
+    "login": "Connexion",
+    "register": "Inscription",
+    "email": "Adresse courriel",
+    "password": "Mot de passe",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "taxProfile": "Profil fiscal",
+    "submit": "Soumettre",
+    "noAccount": "Pas encore de compte ?",
+    "hasAccount": "Déjà un compte ?"
+  },
+  "dashboard": {
+    "title": "Mon tableau de bord",
+    "status": "Statut du dossier",
+    "history": "Historique",
+    "messages": "Messages",
+    "newDeclaration": "Nouvelle déclaration"
+  },
+  "declaration": {
+    "title": "Déclaration de revenus",
+    "step": "Étape",
+    "of": "sur",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Soumettre la déclaration",
+    "save": "Brouillon sauvegardé"
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  }
+}

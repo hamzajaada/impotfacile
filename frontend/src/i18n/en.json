@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Sign Up",
+    "dashboard": "My Dashboard",
+    "formBuilder": "Form Builder",
+    "logout": "Logout"
+  },
+  "home": {
+    "title": "Your tax return, simplified",
+    "subtitle": "ImpôtFacile helps you with your income tax return with expert tax advisors in Quebec.",
+    "cta": "Start my return",
+    "features": {
+      "secure": "Secure",
+      "secureDesc": "Your documents are encrypted and protected under Law 25.",
+      "fast": "Fast",
+      "fastDesc": "Declare in minutes with our guided form.",
+      "expert": "Expert",
+      "expertDesc": "Certified tax advisors review your file."
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Sign Up",
+    "email": "Email address",
+    "password": "Password",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "taxProfile": "Tax profile",
+    "submit": "Submit",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "dashboard": {
+    "title": "My Dashboard",
+    "status": "File Status",
+    "history": "History",
+    "messages": "Messages",
+    "newDeclaration": "New Declaration"
+  },
+  "declaration": {
+    "title": "Income Tax Return",
+    "step": "Step",
+    "of": "of",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit Return",
+    "save": "Draft saved"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
